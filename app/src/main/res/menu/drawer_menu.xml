@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="HOME">
+        </item>
+
+
+        </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+
+        <item android:id="@+id/nav_collection"
+            android:icon="@drawable/ic_collections"
+            android:title="COLLECTION">
+        </item>
+
+
+    </group>
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_safety"
+            android:icon="@drawable/ic_warning"
+            android:title="SAFETY PRECUSSION"></item>
+
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item android:id="@+id/nav_Terms"
+            android:title="Terms of Use">
+        </item>
+        <item android:id="@+id/nav_Policy"
+            android:title="Privacy Policy">
+        </item>
+        <item android:id="@+id/nav_EndUser"
+            android:title="End User Agreement">
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group5">
+        <item android:id="@+id/nav_Version"
+            android:title="Version 1.1.0">
+        </item>
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/signOut">
+        <item android:id="@+id/nav_SignOut"
+            android:title="Sign Out">
+        </item>
+
+    </group>
+
+
+</menu>

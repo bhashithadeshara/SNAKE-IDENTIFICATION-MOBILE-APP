@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+
+    android:background="@color/colorWhite"
+    android:minWidth="19dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:textAlignment="gravity"
+        tools:context=".HomeActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7FFFFFF"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="53dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:minWidth="50dp"
+                android:minHeight="100dp"
+                android:outlineSpotShadowColor="@color/first_color"
+                android:textAlignment="textStart"
+                app:buttonGravity="center_vertical"
+                app:collapseIcon="@drawable/ic_menu"
+                app:maxButtonHeight="100dp"
+                app:navigationIcon="@drawable/ic_menu"
+                app:subtitleTextColor="@color/colorWhite"
+                app:titleMargin="@dimen/cardview_compat_inset_shadow"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:titleTextColor="@color/bacground_color" />
+
+            <ImageView
+                android:id="@+id/imgCamera"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/ic_camera" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/snakeImageView"
+            android:layout_width="208dp"
+            android:layout_height="169dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/identify_snake"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.374"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="89dp"
+            android:layout_height="32dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:text="Snake"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="#00211C"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@+id/snakeImageView"
+            app:layout_constraintTop_toBottomOf="@+id/snakeImageView" />
+
+
+        <TextView
+            android:id="@+id/txtgallery"
+            android:layout_width="376dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/box"
+            android:fadingEdge="horizontal"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.421"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="250dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:text="SNAKE IDENTIFICATION"
+
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/txtgallery"
+            app:layout_constraintHorizontal_bias="0.589"
+            app:layout_constraintStart_toStartOf="@+id/txtgallery"
+            app:layout_constraintTop_toTopOf="@+id/txtgallery" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="250dp"
+            android:layout_height="74dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:lineSpacingExtra="4sp"
+            android:text="Submit a Clear photo of a snake and find the snake's identity and habitat. Find weather snake is venom or not"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtgallery"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/txtgallery"
+            app:layout_constraintTop_toTopOf="@+id/txtgallery"
+            app:srcCompat="@drawable/ic_folder" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtgallery"
+            app:layout_constraintEnd_toEndOf="@+id/txtgallery"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/txtgallery"
+            app:srcCompat="@drawable/ic_arrow_forward" />
+
+        <TextView
+            android:id="@+id/txtLernMore"
+            android:layout_width="376dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/box2"
+            app:layout_constraintEnd_toEndOf="@+id/txtgallery"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/txtgallery"
+            app:layout_constraintTop_toBottomOf="@+id/txtgallery" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="250dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:text="LEARN"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/txtLernMore"
+            app:layout_constraintHorizontal_bias="0.658"
+            app:layout_constraintStart_toStartOf="@+id/txtLernMore"
+            app:layout_constraintTop_toTopOf="@+id/txtLernMore" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/learn"
+            app:layout_constraintEnd_toStartOf="@+id/textView10"
+            app:layout_constraintStart_toStartOf="@+id/txtLernMore"
+            app:layout_constraintTop_toTopOf="@+id/txtLernMore"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="250dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:lineSpacingExtra="4sp"
+            android:text="Snakes are elongated,carnivorous reptiles of the suborder.Browse and learn more about snakes"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintHorizontal_bias="0.261"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/txtLernMore"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/txtLernMore"
+            app:srcCompat="@drawable/ic_arrow_2" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:text="Identifier"
+            android:textAlignment="textStart"
+            android:textColor="#f57d3d"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/snakeImageView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:itemIconTint="@color/first_color"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:itemTextColor="@color/colorWhite"
+        app:itemIconPadding="50dp"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/header"
+        ></com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
